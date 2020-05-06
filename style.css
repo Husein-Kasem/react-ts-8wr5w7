@@ -1,0 +1,54 @@
+h1, p {
+  font-family: Lato;
+}
+
+.grid-device-tile {
+    cursor: pointer;
+    background: white;
+    color: black;
+    margin: 5px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-auto-rows: 18px;
+    width: 152px;
+    grid-template-areas:
+            "tile-image first-line"
+            "tile-image second-line"
+            "tile-image third-line";
+}
+    grid-device-tile:hover {
+        border: 2px solid rgba(17, 12, 12, 0.712);
+    }
+
+    grid-device-tile.tooltip {
+        color: white;
+        background-color: rgba(17, 12, 12, 0.712);
+    }
+
+    .tile-image {
+        grid-area: tile-image;
+        max-height: 45px;
+        max-width: 51px;
+        margin: auto;
+    }
+
+    .first-line {
+        font-weight: bold;
+        grid-area: first-line;
+        padding: 3px 0;
+        text-transform: uppercase;
+    }
+
+    .second-line {
+        grid-area: second-line;
+        font-size: 10px;
+    }
+
+    .third-line {
+        grid-area: third-line;
+        padding: 3px 0;
+        font-size: 10px;
+    }
