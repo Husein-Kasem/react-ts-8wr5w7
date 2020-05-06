@@ -126,7 +126,7 @@ const StepsChart = ({
         const text = target.currentText;
         if(text && text.length === 17){
             return `<div class="grid-device-tile" id="bla">
-                    <img src="bla" title="bla" alt="bla" class="tile-image unknown"/>
+                    <img src="./UNKNOWN.png" title="bla" alt="bla" class="tile-image unknown"/>
                     <div class="first-line">${text}</div>
                     <div class="second-line">unknown</div>
                     <div class="third-line">unknown</div>
